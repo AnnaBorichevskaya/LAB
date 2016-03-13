@@ -6,7 +6,7 @@ int* EnterArray(int*, int);
 void DisplayArray(int*, int);
 int MinposMaxnegElements(int*, int);
 int EvenCount(int);
-void WorkProcedure(int*, int);
+void WorkProcessWithArray(int*, int);
 
 using namespace std;
 
@@ -23,7 +23,7 @@ int main()
 		cout << "Source array " << endl;
 		DisplayArray(a, n);
 		cout << endl;
-		WorkProcedure(a, n);
+		WorkProcessWithArray(a, n);
 		system("pause");
 		system("cls");
 
@@ -81,7 +81,7 @@ int EvenCount(int number)
 	return evenCounter;
 }
 
-void WorkProcedure(int* a, int n)
+void WorkProcessWithArray(int* a, int n)
 {
 	int maxNeg = *(a + 0), maxNegIndex = 0, minPos = *(a + 0), minPosIndex = 0;
 	for (int i = 0; i < n; i += 2)
